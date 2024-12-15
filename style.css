@@ -1,0 +1,113 @@
+* {
+  font-family: sans-serif, "Raleway ";
+}
+
+body {
+  margin: 0;
+  background-color: rgb(32, 34, 33);
+}
+/* navbar */
+.navbar {
+  margin-bottom: 32px;
+}
+.navbar__inner {
+  display: flex;
+  justify-content: space-between;
+  /* colors */
+  border-radius: 0px 0px 0px 15px;
+  background: rgb(149, 110, 47);
+}
+.logo {
+  display: flex;
+  margin-left: 20px;
+}
+.logo-text {
+  color: rgb(32, 34, 33);
+  font-size: 16pt;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-weight: 100;
+  margin-right: 15px;
+  margin-left: 5px;
+}
+.logo img {
+  color: rgb(32, 34, 33);
+  padding-top: 3px;
+  width: 50px;
+  height: 60px;
+}
+.buttons-container {
+  display: flex;
+}
+.nav-buttons {
+  color: rgb(32, 34, 33);
+  font-size: 16pt;
+  padding-top: 20px;
+  padding-right: 33px;
+  text-transform: uppercase;
+  font-weight: 100;
+  width: 145px;
+  height: 50px;
+}
+
+/* panels */
+.panels {
+  display: flex;
+  justify-content: center;
+}
+
+.rectangle {
+  width: 1493px;
+  height: 763px;
+}
+.panel {
+  width: 550px;
+  height: 460px;
+  top: 193px;
+
+  background: rgb(48, 53, 49);
+}
+#coffee {
+  margin-right: 21px;
+}
+
+#cake {
+  margin-left: 21px;
+}
+.active {
+  border: 10px solid rgb(149, 110, 47);
+}
+.panel h3 {
+  color: rgb(182, 139, 75);
+}
+.text {
+  color: rgb(182, 139, 75);
+}
+.price {
+  color: rgb(182, 139, 75);
+}
+/* buttons */
+.buttons {
+}
+.buttons__inner {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  height: 50px;
+}
+.icon-back {
+}
+.button {
+  width: 100px;
+  height: 50px;
+  background: rgb(48, 53, 49);
+  border: none;
+  color: rgb(182, 139, 75);
+}
+.crown {
+}
+.icon-next {
+}
+.line {
+}
