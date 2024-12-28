@@ -26,6 +26,8 @@ body {
 .logo {
   display: flex;
   margin-left: 20px;
+  animation: rotation;
+  animation-duration: 2s;
 }
 .logo-text {
   color: var(--bg-color);
@@ -61,6 +63,8 @@ body {
 .panels {
   display: flex;
   justify-content: center;
+  animation: appearing;
+  animation-duration: 2s;
 }
 
 .rectangle {
@@ -76,7 +80,7 @@ body {
 .panel {
   display: grid;
   grid-template-columns: 225px 225px;
-  grid-template-rows: 50px 250px 160px;
+  grid-template-rows: 50px 200px 160px;
   width: 600px;
   height: 450px;
   grid-gap: 10px;
@@ -107,7 +111,9 @@ body {
   color: var(--gold-color);
   grid-row: 3 / 3;
   grid-column: 1 / 1;
-  padding: 100px 0px 0px 10px;
+  padding: 75px 0px 0px 10px;
+  font-size: 40px;
+  font-weight: lighter;
 }
 .panel img {
   align-content: center;
@@ -138,6 +144,7 @@ body {
   background: rgb(48, 53, 49);
   border: none;
   color: var(--gold-color);
+  transition: 150ms ease;
 }
 .crown {
   width: 52px;
@@ -148,19 +155,40 @@ body {
   width: 52px;
   height: 52px;
 }
+
+.button:hover {
+  margin: 0 10px;
+  width: 105px;
+  border: 5px solid var(--gold-color);
+}
+
 /* lines */
 .line {
   margin: 0 auto;
   background-color: var(--gold-color);
   margin-top: 10px;
   border-radius: 10px;
+  animation: appearing;
+  animation-duration: 2s;
 }
 #big {
   width: 1000px;
   height: 5px;
 }
-#small {
-  width: 500px;
-  height: 5px;
-  margin-bottom: 30px;
+
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotation {
+  0% {
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
